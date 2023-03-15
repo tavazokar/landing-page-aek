@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AEK' 🌐 Agence de Communication</title>
+  <!-- Fonts -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images/pilot-logo.png"/>
+
+  <title>Rotation de texte & zoom au passage de la souris</title>  
+	<style>
+		.rotate-text {
+			display: inline-block;
+			transition: transform 0.5s;
+		}
+		.rotate-text:hover {
+			transform: rotate(-2deg);
+		}
+    
+    .zoom {
+      transition: transform .5s;
+    }
+    .zoom:hover {
+      transform: scale(1.05);
+    }
+	</style>
+
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-text">
+      <h1 class="separation"> Hissez-haut vos projets digitaux !</h1>
+      <img src="images/chrayta.png">
+      <p>Agence digitale experte WordPress sur Paris, créative et humaine.</p> 
+       <div class="zoom">
+          <a href="#demander_une_démo" class="btn-orange"> Demander une démo</a>
+       </div>
+    </div>
+
+    <div class="background-video">
+      <video autoplay loop muted>
+        <source src="images/video grande.mp4" type="video/mp4">  
+      </video>
+    </div>
+  </div>
+
+
+  <div id="demander_une_démo" class="banner">
+    <h2 id="text-baner">Besoin d'être<span style="color:#F49D1D"> accompagné</span>?</h2>
+    <p> <span style="color: white;"> Nous sommes là pour vous aider</span></p>
+    <p id="banner-p"></p>
+    <a href="#" class="btn-orange"> Demander une démo</a>
+  </div>
+
+  <div class="container">
+    <h2>Nos expertises </h2>
+    <p class="p-align">
+      Vous souhaitez commencer de zéro ou vous avez déjà quelques bases ? <br> Quelle que soit l’étape de votre projet, nos équipes de marins vous accompagnent dans l’exploration des océans du digital. Alors, embarquez… Profitez du voyage !
+    </p>
+
+    <div class="grid">
+      <div class="cards">
+        <div class="zoom">
+          <img src="images/img-banner 1.jpg" alt="Ateliers & Formations" class="cards-img">
+        </div>
+        <h3><span class="rotate-text">Ateliers & Formations</span></h3>
+        <p class="pg-cards">✔️ Formations certifiées Qualiopi sur-mesures et adaptées à vos enjeux business, de développement ou de transformation ?</p>
+        <div class="zoom">
+         <a href="#demander_une_démo" class="btn-orange">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="zoom">
+         <img src="images/img-banner2.jpg" alt="Site web WordPress" class="cards-img">
+        </div>
+        <h3><span class="rotate-text">Site web WordPress</span></h3>
+        <p class="pg-cards"> 😎 Vous avez un projet de création ou de refonte de site WordPress ? Nous vous assurons un projet engageant et...</p>
+        <div class="zoom">
+         <a href="#demander_une_démo" class="btn-orange">En savoir plus</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="zoom">
+         <img src="images/img-banner 3.jpg" alt="Création de contenus" class="cards-img">
+        </div>
+        <h3><span class="rotate-text">Création de contenus</span></h3>
+        <p class="pg-cards">La création de contenu pour alimenter votre image de marque et votre prospection digitale... <br> Contactez-nous pour... 👇
+        </p>
+        <div class="zoom">
+         <a href="#demander_une_démo" class="btn-orange">En savoir plus</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="second-grid">
+      <div class="cards">
+        <h1><span class="rotate-text">Envoyez une bouteille à la mer !</span></h1>      
+        <p class="pg-cards">Un super projet digital ? Partons ensemble à l’abordage ! Nous en parler, c’est ici ! 👇</p>
+        <div class="zoom">
+         <a href="#demander_une_démo" class="btn-orange">Contactez-nous</a>
+        </div>
+      </div>
+      <div class="card-transparente">
+        <img src="images/pilot-img.jpg" alt="" class="img-pilot">
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
+
+  </div>
+
+  <div class="video-separator">
+    <video autoplay loop muted>
+      <source src="images/capture vidéo pilot.mp4" type="video/mp4">
+    </video>
+  </div>
+
+ <div class="footer">
+   <div> 
+      <ul class="liner">
+        <li id="title-footer">Nos pages piliers</li>
+        <li class="Footer-list">Logo & Identité Visuelle</a></li>    
+        <li class="Footer-list">Création de site Wordpress</a></li>      
+        <li class="Footer-list">Trouver son agence digitale à Paris</a></li>
+        <li class="Footer-list">Formation digitale certifiée</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="liner">
+        <li id="title-footer"> Envie de nous rejoindre ?</li> 
+        <li class="Footer-list">L'équipe</a></li>
+        <li class="Footer-list">La page recrutement</a></li>
+        <li class="Footer-list">Des formations certifiées</a></li>
+        <li class="Footer-list">Contactez-nous</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="liner">
+        <li id="title-footer"> Informations</li>
+        <li class="Footer-list">CGU</a></li>
+        <li class="Footer-list">Mentions légales</a></li>
+        <li class="Footer-list">Politique de Confidentialité</a></li>
+        <li class="Footer-list">Politique Cookies</a></li>
+      </ul>
+    </div>
+    
+
+    <div>
+      <ul class="liner">
+        <li id="title-footer"> En Savoir Plus</li>
+        <li class="Footer-list">Tutos</a></li>
+        <li class="Footer-list">Témoignages</a></li>
+        <li class="Footer-list">Dernières Actualités</a></li>
+        <li class="Footer-list">Suivez-nous sur les réseaux</a></li>
+      </ul>
+    </div>
+
+   <h4>
+     AEK 2023© - Powered by <strong>AEK'Press</strong>
+    </h4>
+
+
+</body>
+</html>

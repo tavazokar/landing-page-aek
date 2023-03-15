@@ -1,0 +1,218 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'lora', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Chivo', sans-serif;
+  font-size: 45px;
+  color: #122087;
+  font-weight: 800;
+  margin-bottom: -1px;
+}
+
+h2 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #0B66C2;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #0B66C2;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  padding-left: 40px;
+  margin-bottom: -40px;
+}
+
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid: 20px;
+}
+
+.header-text {
+  padding: 40px;
+  padding-top: 10%;
+  color: black;
+  font-size: 25px;
+}
+
+.separation {
+  margin-top: -20px;
+}
+
+.background-video {
+  padding: 20px;
+}
+
+.background-video video{
+  width: 100%;
+}
+
+.btn-orange {
+  background-color:#F39D1E;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 1000px;
+}
+
+.btn-orange:hover {
+  background-color: #122087;
+  color: white;
+}
+
+.banner {
+  padding: 150px 0;
+  margin: 0;
+  background-image: url('images/background\ livres.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#banner-p {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+#text-baner {
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 50px auto;
+  margin-top: 150px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cards {
+  padding: 4px;
+  margin: 1px;
+  border-radius: 10%;
+  align-items: center;
+  text-align: center;
+}
+
+.cards-img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.pg-cards {
+  font-size: 15px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.second-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1px;
+}
+
+.img-pilot {
+  width: 100%;
+  border-radius: 3%;
+}
+
+.p-align {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.video-separator {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+.footer {
+  background-color: #122087;
+  padding: 50px 0;
+  margin: 0%;
+  margin-top: -30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.Footer-list {
+  color: #eae6e1;
+  text-decoration: none;
+  list-style: none;
+}
+
+.Footer-list:hover {
+  color: rgb(255, 252, 252);
+  text-decoration: underline;
+}
+
+#title-footer {
+  color: #eae6e1;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+
+
+@media (min-width: 300px) {
+  .container {
+    width: 400px;
+    
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+ 
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 1200px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
